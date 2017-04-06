@@ -1,0 +1,422 @@
+/***** Color palette
+white: white
+dark-grey letters: 4a4a4a
+light grey text: 8f8f8f
+orange hover: f78460
+beige new background: dad7cd
+*****/
+
+/*Check CSS*/
+
+/** {
+    border: 1px solid red;
+}*/
+
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+}
+
+/*****Nav, header styles*****/
+nav {
+  width: 100%;
+  background: #dad7cd;
+  padding: .5em;
+}
+
+nav a {
+  background: white;
+  border: 3px solid #8f8f8f;
+  border-radius: 20px;
+}
+
+nav li {
+  padding-left: .25em;
+}
+
+.main-header {
+  background: #dad7cd;
+  padding: 1.5em;
+  line-height: 1.2em;
+  color: #8f8f8f;
+}
+
+/***** Nav & anchors styles*****/
+.nav {
+  font-weight: 700;
+  font-size: 1em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: Courgette;
+  color: #f78460;
+  font-size: 1.5em;
+
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #b0b3b7;
+  padding: .5em;
+  margin-top: .5em;
+  background-color: white;
+  transition: all .5s ease-out;
+}
+
+.nav a:hover {
+  background: #f78460;
+  color: white;
+}
+
+.profile-image {
+  max-width: 80%;
+  margin-left: 1em;
+}
+
+.profile-info {
+  padding: 1em;
+}
+
+/***** Portfolio styles*****/
+
+.portfolio {
+  max-width: 100%;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+}
+
+.portfolio ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image {
+  max-width: 90%;
+}
+
+.project-title {
+  color: #4a4a4a;
+  font-weight: 900;
+  font-size: 1.1em;
+  margin: auto;
+  padding: 2em;
+}
+
+.project-sub-title {
+  color: #4a4a4a;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin: 1.5em 0 0 0;
+}
+
+.project-description {
+  color: #4a4a4a;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0 1em 2em 1em;
+  padding: 1em;
+  height: 6em; /* This was added to fix an issue with the container size in IE */
+}
+
+/***** Skills styles *****/
+
+.skills {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  background: white;
+  margin: 3em 0 3em 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  background: white;
+  margin-bottom: 3em;
+}
+
+.icons {
+  padding: 1em;
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #f78460;
+}
+
+.skills-title {
+  color: #4a4a4a;
+  font-weight: 900;
+  font-size: 1.1em;
+  padding: 0em 1em 0em 1em;
+  background: white;
+  margin: 3em;
+}
+
+
+/***** Contact section styles *****/
+
+.contact-title {
+  font-weight: 900;
+  font-size: 1.1em;
+  margin: 3em 0 1em 0;
+  color: #4a4a4a;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: #8f8f8f;
+  background: #dad7cd;
+  max-width: 100%;
+  margin-top: 3em;
+  margin-bottom: -.5em;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+  border: 2px solid rgb(186, 187, 188);
+}
+
+.info {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.info li{
+  padding-bottom: 1em;
+}
+
+.numbers {
+  line-height: 2em;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0 0 3em 0;
+  display: block;
+}
+
+span {
+  font-weight: 700;
+}
+
+
+/***** Footer styles*****/
+
+ .footer {
+    background-color: #dad7cd;
+ }
+
+ .footer-name {
+   font-family: Courgette;
+   color: #f78460;
+   font-size: 1.2em;
+   padding: 0;
+   margin-right: auto;
+   margin-left: 5%;
+ }
+
+.footer-nav  {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: .9em;
+  color: #4a4a4a;
+  margin: 0 auto;
+  padding: 2em 1em;
+}
+
+.footer a {
+    text-decoration: none;
+    font-weight: 900;
+    color: #4a4a4a;
+    transition: all .5s ease-out;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.hidden-back {
+  font-weight: 700;
+  margin-right: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+/***** Media queries *****/
+
+@media(min-width: 768px) {
+
+  .body {
+      background-color: #dad7cd;
+  }
+
+  .nav a{
+    background: white;
+  }
+
+  .nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .portfolio {
+    display: inline-block;
+  }
+
+  .profile-info {
+    text-align: left;
+  }
+
+  .project {
+    display: inline-block;
+    width: 40%;
+  }
+
+  .info {
+    padding: 0 9em 0 9em;
+  }
+
+  .icons {
+    font-size: 1.5em;
+  }
+
+  .footer-nav {
+    justify-content: space-between;
+  }
+
+  .hidden {
+    display: inline;
+    margin-right: 2em;
+  }
+
+  .hidden-back {
+    display: none;
+  }
+
+  .footer {
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+  }
+}
+
+@media(min-width: 1024px) {
+
+   .main-header,
+    body,
+   .footer
+    {
+    background: #dad7cd;
+    font-size: 1.1em;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 4em;
+  }
+
+  .main-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-bottom: 2em;
+    padding: 0;
+  }
+
+  .nav {
+    padding-top: .5em;
+    margin-right: 0;
+  }
+
+  .name {
+    margin-right: auto;
+    margin-left: 2.5em;
+  }
+
+  .profile-info {
+    padding-right: 2em;
+    margin: 0;
+    text-align: left;
+  }
+
+  .portfolio,
+  .skills  {
+    margin-left: 3em;
+    margin-right: 3em;
+    background: white;
+    margin-bottom: 0;
+  }
+
+  .project-title {
+      font-size: 1.1em;
+  }
+
+  .project {
+    display: inline-block;
+    width: 30%;
+  }
+
+  .skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: center;
+    background: white;
+  }
+
+  .skills-title {
+    padding: 0em 10em 0em 10em;
+  }
+
+  .contact {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+  .footer-nav {
+    margin: 0;
+    margin-right: 1em;
+  }
+
+}
