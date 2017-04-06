@@ -1,0 +1,319 @@
+/***** Portfolio styles*****/
+
+.portfolio {
+  @extend %width-max;
+  margin-top: 2em;
+  @extend %flex-column;
+  @extend %list-text-center;
+}
+
+.portfolio ul {
+  list-style-type: none;
+  @extend %margin-auto;
+  padding: 0;
+  @extend %flex-column;
+}
+
+.project-image {
+  max-width: 90%;
+}
+
+.project-title {
+  color: #4a4a4a;
+  @extend %bolder;
+  margin: auto;
+  padding: 2em;
+}
+
+.project-sub-title {
+  color: #4a4a4a;
+  @extend %no-bold;
+  font-size: 1.2em;
+  margin: 1.5em 0 0 0;
+}
+
+.project-description {
+  color: #4a4a4a;
+  @extend %no-bold;
+  font-size: 1em;
+  margin: 0 1em 2em 1em;
+  padding: 1em;
+  height: 6em; /* This was added to fix an issue with the container size in IE */
+}
+
+/***** Skills styles *****/
+
+.skills {
+  @extend %width-max;
+  @extend %flex-column;
+  align-items: center;
+  @extend %list-text-center;
+  background: white;
+  margin: 3em 0 3em 0;
+}
+
+.skills ul {
+  list-style-type: none;
+  margin: auto;
+  @extend %flex-row;
+  padding: 0;
+  background: white;
+  margin-bottom: 3em;
+}
+
+.icons {
+  padding: 1em;
+  @extend %bold;
+  font-size: 1.1em;
+  color: #f78460;
+}
+
+.skills-title {
+  color: #4a4a4a;
+  @extend %bolder;
+  padding: 0em 1em 0em 1em;
+  background: white;
+  margin: 3em;
+}
+
+
+/***** Contact section styles *****/
+
+.contact-title {
+  @extend %bolder;
+  margin: 3em 0 1em 0;
+  color: #4a4a4a;
+}
+
+.contact {
+  @extend %flex-column;
+  color: #8f8f8f;
+  background: #dad7cd;
+  @extend %width-max;
+  margin-top: 3em;
+  margin-bottom: -.5em;
+}
+
+hr {
+  width: 90%;
+  @extend %margin-auto;
+  border: 2px solid rgb(186, 187, 188);
+}
+
+.info {
+  list-style-type: none;
+  @extend %margin-auto;
+  padding: 1.5em;
+  @extend %flex-column;
+}
+
+.info li{
+  padding-bottom: 1em;
+}
+
+.numbers {
+  line-height: 2em;
+  list-style-type: none;
+  @extend %margin-auto;
+  padding: 0 0 3em 0;
+  display: block;
+}
+
+span {
+  @extend %bold;
+}
+
+
+/***** Footer styles*****/
+
+ .footer {
+    background-color: #dad7cd;
+ }
+
+ .footer-name {
+   font-family: Courgette;
+   color: #f78460;
+   font-size: 1.2em;
+   padding: 0;
+   margin-right: auto;
+   margin-left: 5%;
+ }
+
+.footer-nav  {
+  @extend %flex-row;
+  list-style-type: none;
+  justify-content: space-between;
+  @extend %bold;
+  font-size: .9em;
+  color: #4a4a4a;
+  @extend %margin-auto;
+  padding: 2em 1em;
+}
+
+.footer a {
+    text-decoration: none;
+    @extend %bolder;
+    color: #4a4a4a;
+    transition: all .5s ease-out;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.hidden-back {
+  @extend %bold;
+  margin-right: 1em;
+}
+
+.hidden {
+  display: none;
+}
+
+/***** Media queries *****/
+//
+// @media(min-width: 768px) {
+//
+//   .body {
+//       background-color: #dad7cd;
+//   }
+//
+//   .nav a{
+//     background: white;
+//   }
+//
+//   .nav {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//   }
+//
+//   .main-header {
+//     display: flex;
+//     flex-direction: row-reverse;
+//   }
+//
+//   .portfolio {
+//     display: inline-block;
+//   }
+//
+//   .profile-info {
+//     text-align: left;
+//   }
+//
+//   .project {
+//     display: inline-block;
+//     width: 40%;
+//   }
+//
+//   .info {
+//     padding: 0 9em 0 9em;
+//   }
+//
+//   .icons {
+//     font-size: 1.5em;
+//   }
+//
+//   .footer-nav {
+//     justify-content: space-between;
+//   }
+//
+//   .hidden {
+//     display: inline;
+//     margin-right: 2em;
+//   }
+//
+//   .hidden-back {
+//     display: none;
+//   }
+//
+//   .footer {
+//      border-top-left-radius: 0px;
+//      border-top-right-radius: 0px;
+//   }
+// }
+//
+// @media(min-width: 1024px) {
+//
+//    .main-header,
+//     body,
+//    .footer
+//     {
+//     background: #dad7cd;
+//     font-size: 1.1em;
+//   }
+//
+//   nav {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//     padding-right: 4em;
+//   }
+//
+//   .main-header {
+//     display: flex;
+//     flex-direction: row-reverse;
+//     justify-content: space-between;
+//     margin-left: 3.5em;
+//     margin-right: 3.5em;
+//     margin-bottom: 2em;
+//     padding: 0;
+//   }
+//
+//   .nav {
+//     padding-top: .5em;
+//     margin-right: 0;
+//   }
+//
+//   .name {
+//     margin-right: auto;
+//     margin-left: 2.5em;
+//   }
+//
+//   .profile-info {
+//     padding-right: 2em;
+//     margin: 0;
+//     text-align: left;
+//   }
+//
+//   .portfolio,
+//   .skills  {
+//     margin-left: 3em;
+//     margin-right: 3em;
+//     background: white;
+//     margin-bottom: 0;
+//   }
+//
+//   .project-title {
+//       font-size: 1.1em;
+//   }
+//
+//   .project {
+//     display: inline-block;
+//     width: 30%;
+//   }
+//
+//   .skills {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     list-style-type: none;
+//     text-align: center;
+//     background: white;
+//   }
+//
+//   .skills-title {
+//     padding: 0em 10em 0em 10em;
+//   }
+//
+//   .contact {
+//     margin-left: 3em;
+//     margin-right: 3em;
+//   }
+//
+//   .footer-nav {
+//     margin: 0;
+//     margin-right: 1em;
+//   }
+//
+// }

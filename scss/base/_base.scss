@@ -1,0 +1,76 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: white;
+
+}
+
+/*****Nav, header styles*****/
+nav {
+  width: 100%;
+  background: #dad7cd;
+  padding: .5em;
+}
+
+nav a {
+  background: white;
+  border: 3px solid #8f8f8f;
+  border-radius: 20px;
+}
+
+nav li {
+  padding-left: .25em;
+}
+
+.main-header {
+  background: #dad7cd;
+  padding: 1.5em;
+  line-height: 1.2em;
+  color: #8f8f8f;
+}
+
+/***** Nav & anchors styles*****/
+.nav {
+  @extend %bold;
+  @extend %list-text-center;
+  @extend %margin-auto;
+  padding: 0;
+  @extend %flex-column;
+}
+
+.name {
+  font-family: Courgette;
+  color: #f78460;
+  font-size: 1.5em;
+
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #b0b3b7;
+  padding: .5em;
+  margin-top: .5em;
+  background-color: white;
+  transition: all .5s ease-out;
+}
+
+.nav a:hover {
+  background: #f78460;
+  color: white;
+}
+
+.profile-image {
+  max-width: 80%;
+  margin-left: 1em;
+}
+
+.profile-info {
+  padding: 1em;
+}

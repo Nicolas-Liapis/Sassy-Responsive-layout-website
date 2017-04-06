@@ -1,0 +1,204 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box; }
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: white; }
+
+/*****Nav, header styles*****/
+nav {
+  width: 100%;
+  background: #dad7cd;
+  padding: .5em; }
+
+nav a {
+  background: white;
+  border: 3px solid #8f8f8f;
+  border-radius: 20px; }
+
+nav li {
+  padding-left: .25em; }
+
+.main-header {
+  background: #dad7cd;
+  padding: 1.5em;
+  line-height: 1.2em;
+  color: #8f8f8f; }
+
+/***** Nav & anchors styles*****/
+.nav {
+  padding: 0; }
+
+.name {
+  font-family: Courgette;
+  color: #f78460;
+  font-size: 1.5em; }
+
+.nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #b0b3b7;
+  padding: .5em;
+  margin-top: .5em;
+  background-color: white;
+  transition: all .5s ease-out; }
+
+.nav a:hover {
+  background: #f78460;
+  color: white; }
+
+.profile-image {
+  max-width: 80%;
+  margin-left: 1em; }
+
+.profile-info {
+  padding: 1em; }
+
+/***** Portfolio styles*****/
+.portfolio {
+  margin-top: 2em; }
+
+.portfolio ul {
+  list-style-type: none;
+  padding: 0; }
+
+.project-image {
+  max-width: 90%; }
+
+.project-title {
+  color: #4a4a4a;
+  margin: auto;
+  padding: 2em; }
+
+.project-sub-title {
+  color: #4a4a4a;
+  font-size: 1.2em;
+  margin: 1.5em 0 0 0; }
+
+.project-description {
+  color: #4a4a4a;
+  font-size: 1em;
+  margin: 0 1em 2em 1em;
+  padding: 1em;
+  height: 6em;
+  /* This was added to fix an issue with the container size in IE */ }
+
+/***** Skills styles *****/
+.skills {
+  align-items: center;
+  background: white;
+  margin: 3em 0 3em 0; }
+
+.skills ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  background: white;
+  margin-bottom: 3em; }
+
+.icons {
+  padding: 1em;
+  font-size: 1.1em;
+  color: #f78460; }
+
+.skills-title {
+  color: #4a4a4a;
+  padding: 0em 1em 0em 1em;
+  background: white;
+  margin: 3em; }
+
+/***** Contact section styles *****/
+.contact-title {
+  margin: 3em 0 1em 0;
+  color: #4a4a4a; }
+
+.contact {
+  color: #8f8f8f;
+  background: #dad7cd;
+  margin-top: 3em;
+  margin-bottom: -.5em; }
+
+hr {
+  width: 90%;
+  border: 2px solid #babbbc; }
+
+.info {
+  list-style-type: none;
+  padding: 1.5em; }
+
+.info li {
+  padding-bottom: 1em; }
+
+.numbers {
+  line-height: 2em;
+  list-style-type: none;
+  padding: 0 0 3em 0;
+  display: block; }
+
+/***** Footer styles*****/
+.footer {
+  background-color: #dad7cd; }
+
+.footer-name {
+  font-family: Courgette;
+  color: #f78460;
+  font-size: 1.2em;
+  padding: 0;
+  margin-right: auto;
+  margin-left: 5%; }
+
+.footer-nav {
+  list-style-type: none;
+  justify-content: space-between;
+  font-size: .9em;
+  color: #4a4a4a;
+  padding: 2em 1em; }
+
+.footer a {
+  text-decoration: none;
+  color: #4a4a4a;
+  transition: all .5s ease-out; }
+
+.footer a:hover {
+  color: white; }
+
+.hidden-back {
+  margin-right: 1em; }
+
+.hidden {
+  display: none; }
+
+/***** Media queries *****/
+.nav, .icons, span, .footer-nav, .hidden-back {
+  font-weight: 700;
+  font-size: 1em; }
+
+.project-title, .skills-title, .contact-title, .footer a {
+  font-weight: 900;
+  font-size: 1.1em; }
+
+.project-sub-title, .project-description {
+  font-weight: 500; }
+
+.nav, .portfolio, .skills {
+  list-style-type: none;
+  text-align: center; }
+
+.nav, .portfolio, .portfolio ul, .skills, .contact, .info {
+  display: flex;
+  flex-direction: column; }
+
+.skills ul, .footer-nav {
+  display: flex;
+  flex-direction: row; }
+
+.portfolio, .skills, .contact {
+  max-width: 100%; }
+
+.nav, .portfolio ul, hr, .info, .numbers, .footer-nav {
+  margin: 0 auto; }
+
+/*# sourceMappingURL=application.css.map */

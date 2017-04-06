@@ -1,0 +1,51 @@
+//****************
+//Extends
+//****************
+
+//Text styling
+
+%bold {
+  font-weight: 700;
+  font-size: 1em;
+}
+
+%bolder {
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+%no-bold {
+  font-weight: 500;
+}
+
+%list-text-center {
+  list-style-type: none;
+  text-align: center;
+}
+
+//Display of content
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+%flex-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+%width-max {
+  max-width: 100%;
+}
+
+//Margins
+
+%margin-auto {
+  margin: 0 auto;
+}
