@@ -1,10 +1,23 @@
+
+
 /***** Portfolio styles*****/
 
 .portfolio {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
   @extend %width-max;
   margin-top: 2em;
-  @extend %flex-column;
   @extend %list-text-center;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+  }
+  @media(min-width: 1024px) {
+    margin-left: 3em;
+    margin-right: 3em;
+    background: white;
+    margin-bottom: 0;
+  }
 }
 
 .portfolio ul {
@@ -14,27 +27,39 @@
   @extend %flex-column;
 }
 
+.project {
+  display: flex;
+  flex-direction: column;
+@media screen and (min-width: 768px) {
+  display: inline-block;
+  width: 40%;
+  }
+  @media(min-width: 1024px) {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
 .project-image {
   max-width: 90%;
 }
 
 .project-title {
-  color: #4a4a4a;
-  @extend %bolder;
+  @include fonts (1.1em, 900, $tundora);
   margin: auto;
   padding: 2em;
+  @media(min-width: 1024px) {
+    font-size: 1.1em;
+  }
 }
 
 .project-sub-title {
-  color: #4a4a4a;
-  @extend %no-bold;
-  font-size: 1.2em;
+  @include fonts (1.2em, 500, $tundora);
   margin: 1.5em 0 0 0;
 }
 
 .project-description {
-  color: #4a4a4a;
-  @extend %no-bold;
+  @include fonts (1em, 500, $tundora);
   font-size: 1em;
   margin: 0 1em 2em 1em;
   padding: 1em;
@@ -48,8 +73,16 @@
   @extend %flex-column;
   align-items: center;
   @extend %list-text-center;
-  background: white;
+  background: $white;
   margin: 3em 0 3em 0;
+  @media screen and (min-width: 1024px) {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style-type: none;
+  text-align: center;
+  background: white;
+  }
 }
 
 .skills ul {
@@ -57,41 +90,47 @@
   margin: auto;
   @extend %flex-row;
   padding: 0;
-  background: white;
+  background: $white;
   margin-bottom: 3em;
 }
 
 .icons {
   padding: 1em;
-  @extend %bold;
-  font-size: 1.1em;
-  color: #f78460;
+  @include fonts (1.1em, 700, $tan-hide);
+  @media screen and (min-width: 768px) {
+    font-size: 1.5em;
+  }
 }
 
 .skills-title {
-  color: #4a4a4a;
-  @extend %bolder;
+  @include fonts(1em, 700, $tundora);
   padding: 0em 1em 0em 1em;
-  background: white;
+  background: $white;
   margin: 3em;
+  @media(min-width: 1024px) {
+    padding: 0em 10em 0em 10em;
+  }
 }
 
 
 /***** Contact section styles *****/
 
 .contact-title {
-  @extend %bolder;
+  @include fonts (1.1em, 900, $tundora);
   margin: 3em 0 1em 0;
-  color: #4a4a4a;
 }
 
 .contact {
   @extend %flex-column;
-  color: #8f8f8f;
-  background: #dad7cd;
+  color: $gray;
+  background: $beige;
   @extend %width-max;
   margin-top: 3em;
   margin-bottom: -.5em;
+  @media(min-width: 1024px) {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
 }
 
 hr {
@@ -105,6 +144,9 @@ hr {
   @extend %margin-auto;
   padding: 1.5em;
   @extend %flex-column;
+  @media screen and (min-width: 768px) {
+    padding: 0 9em 0 9em;
+  }
 }
 
 .info li{
@@ -120,20 +162,23 @@ hr {
 }
 
 span {
-  @extend %bold;
+  @include fonts (1.1em, 700, $tundora);
 }
 
 
 /***** Footer styles*****/
 
  .footer {
-    background-color: #dad7cd;
- }
+    background-color: $beige;
+    @media screen and (min-width: 768px) {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+  }
 
  .footer-name {
    font-family: Courgette;
-   color: #f78460;
-   font-size: 1.2em;
+   @include fonts (1.2em, 700, $tan-hide);
    padding: 0;
    margin-right: auto;
    margin-left: 5%;
@@ -143,177 +188,40 @@ span {
   @extend %flex-row;
   list-style-type: none;
   justify-content: space-between;
-  @extend %bold;
-  font-size: .9em;
-  color: #4a4a4a;
+  @include fonts (1.1em, 700, $tundora);
   @extend %margin-auto;
   padding: 2em 1em;
+  @media screen and (min-width: 768px) {
+    justify-content: space-between;
+  }
+  @media(min-width: 1024px) {
+    margin: 0;
+    margin-right: 1em;
+  }
 }
 
 .footer a {
     text-decoration: none;
-    @extend %bolder;
-    color: #4a4a4a;
+    @include fonts (.9em, 700, $tundora);
     transition: all .5s ease-out;
 }
 
 .footer a:hover {
-  color: white;
+  color: $white;
 }
 
 .hidden-back {
-  @extend %bold;
+  @include fonts (1.1em, 700, $tundora);
   margin-right: 1em;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .hidden {
   display: none;
+  @media screen and (min-width: 768px) {
+    display: inline;
+    margin-right: 2em;
+  }
 }
-
-/***** Media queries *****/
-//
-// @media(min-width: 768px) {
-//
-//   .body {
-//       background-color: #dad7cd;
-//   }
-//
-//   .nav a{
-//     background: white;
-//   }
-//
-//   .nav {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: center;
-//   }
-//
-//   .main-header {
-//     display: flex;
-//     flex-direction: row-reverse;
-//   }
-//
-//   .portfolio {
-//     display: inline-block;
-//   }
-//
-//   .profile-info {
-//     text-align: left;
-//   }
-//
-//   .project {
-//     display: inline-block;
-//     width: 40%;
-//   }
-//
-//   .info {
-//     padding: 0 9em 0 9em;
-//   }
-//
-//   .icons {
-//     font-size: 1.5em;
-//   }
-//
-//   .footer-nav {
-//     justify-content: space-between;
-//   }
-//
-//   .hidden {
-//     display: inline;
-//     margin-right: 2em;
-//   }
-//
-//   .hidden-back {
-//     display: none;
-//   }
-//
-//   .footer {
-//      border-top-left-radius: 0px;
-//      border-top-right-radius: 0px;
-//   }
-// }
-//
-// @media(min-width: 1024px) {
-//
-//    .main-header,
-//     body,
-//    .footer
-//     {
-//     background: #dad7cd;
-//     font-size: 1.1em;
-//   }
-//
-//   nav {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     padding-right: 4em;
-//   }
-//
-//   .main-header {
-//     display: flex;
-//     flex-direction: row-reverse;
-//     justify-content: space-between;
-//     margin-left: 3.5em;
-//     margin-right: 3.5em;
-//     margin-bottom: 2em;
-//     padding: 0;
-//   }
-//
-//   .nav {
-//     padding-top: .5em;
-//     margin-right: 0;
-//   }
-//
-//   .name {
-//     margin-right: auto;
-//     margin-left: 2.5em;
-//   }
-//
-//   .profile-info {
-//     padding-right: 2em;
-//     margin: 0;
-//     text-align: left;
-//   }
-//
-//   .portfolio,
-//   .skills  {
-//     margin-left: 3em;
-//     margin-right: 3em;
-//     background: white;
-//     margin-bottom: 0;
-//   }
-//
-//   .project-title {
-//       font-size: 1.1em;
-//   }
-//
-//   .project {
-//     display: inline-block;
-//     width: 30%;
-//   }
-//
-//   .skills {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     list-style-type: none;
-//     text-align: center;
-//     background: white;
-//   }
-//
-//   .skills-title {
-//     padding: 0em 10em 0em 10em;
-//   }
-//
-//   .contact {
-//     margin-left: 3em;
-//     margin-right: 3em;
-//   }
-//
-//   .footer-nav {
-//     margin: 0;
-//     margin-right: 1em;
-//   }
-//
-// }

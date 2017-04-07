@@ -4,20 +4,6 @@
 
 //Text styling
 
-%bold {
-  font-weight: 700;
-  font-size: 1em;
-}
-
-%bolder {
-  font-weight: 900;
-  font-size: 1.1em;
-}
-
-%no-bold {
-  font-weight: 500;
-}
-
 %list-text-center {
   list-style-type: none;
   text-align: center;
@@ -48,4 +34,16 @@
 
 %margin-auto {
   margin: 0 auto;
+}
+
+//****************
+//Mixins
+//****************
+
+//font mixin
+
+@mixin fonts ($font-size, $font-weight, $font-color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
 }
