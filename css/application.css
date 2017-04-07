@@ -10,18 +10,6 @@ body {
     body {
       background-color: #dad7cd; } }
 
-/* Global Layout Set-up */
-* {
-  box-sizing: border-box; }
-
-body {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-  background: #fff; }
-  @media screen and (min-width: 768px) {
-    body {
-      background-color: #dad7cd; } }
-
 /*****Nav, header styles*****/
 nav {
   background: #dad7cd;
