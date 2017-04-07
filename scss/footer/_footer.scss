@@ -1,0 +1,58 @@
+/***** Footer styles*****/
+
+ .footer {
+    background-color: $beige;
+    @media screen and (min-width: $break-medium) {
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    a {
+        text-decoration: none;
+        @include fonts (.9em, 700, $tundora);
+        transition: all .5s ease-out;
+    }
+  }
+
+ .footer-name {
+   font-family: Courgette;
+   @include fonts (1.2em, 700, $tan-hide);
+   padding: 0;
+   margin-right: auto;
+   margin-left: 5%;
+ }
+
+.footer-nav  {
+  @extend %flex-row;
+  list-style-type: none;
+  justify-content: space-between;
+  @include fonts (1.1em, 700, $tundora);
+  @extend %margin-auto;
+  padding: 2em 1em;
+  @media screen and (min-width: $break-medium) {
+    justify-content: space-between;
+  }
+  @media(min-width: $break-large) {
+    margin: 0;
+    margin-right: 1em;
+  }
+}
+
+.footer a:hover {
+  color: $white;
+}
+
+.hidden-back {
+  @include fonts (1em, 700, $tundora);
+  margin-right: 1em;
+  @media screen and (min-width: $break-medium) {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+  @media screen and (min-width: $break-medium) {
+    display: inline;
+    margin-right: 2em;
+  }
+}

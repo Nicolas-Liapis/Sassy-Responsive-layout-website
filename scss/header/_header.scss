@@ -1,0 +1,122 @@
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  background: $white;
+  @media screen and (min-width: $break-medium) {
+    background-color: $beige;
+  }
+}
+
+/*****Nav, header styles*****/
+nav {
+  background: $beige;
+  padding: .5em;
+  width: 100%;
+  padding: 1em;
+  @media screen and (min-width: $break-large) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  a {
+    background: $white;
+    border: 3px solid $gray;
+    border-radius: 20px;
+  }
+  li {
+    padding-left: .25em;
+    @media screen and (min-width: $break-medium) {
+      width: 130px;
+    }
+  }
+}
+
+.main-header {
+  background: $beige;
+  padding: 1.5em;
+  line-height: 1.2em;
+  color: $gray;
+  @media screen and (min-width: $break-medium) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  @media screen and (min-width: $break-large) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 3.5em;
+    margin-right: 3.5em;
+    margin-bottom: 2em;
+    padding: 0;
+  }
+}
+
+/***** Nav & anchors styles*****/
+.nav {
+  @include fonts(1em, 700, $tundora);
+  @extend %list-text-center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  @extend %margin-auto;
+  @media screen and (min-width: $break-medium) {
+      flex-direction: row;
+      justify-content: center;
+  }
+  @media screen and (min-width: $break-large) {
+    padding-top: .5em;
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10em;
+  }
+}
+
+.name {
+  font-family: Courgette;
+  @include fonts (1.5em, 700, $tan-hide);
+  @media screen and (min-width: $break-large) {
+    margin-right: auto;
+    margin-left: 2.5em;
+  }
+}
+
+.nav a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: $light-gray;
+  padding: .5em;
+  margin-top: .5em;
+  background: $white;
+  transition: all .5s ease-out;
+
+}
+
+.nav a:hover {
+  background: $tan-hide;
+  color: $white;
+}
+
+.profile-image {
+  max-width: 80%;
+  margin-left: 1em;
+}
+
+.profile-info {
+  padding: 1em;
+  @media screen and (min-width: $break-medium) {
+    text-align: left;
+  }
+  @media screen and (min-width: $break-large) {
+    padding-right: 2em;
+    margin: 0;
+    text-align: left;
+  }
+}

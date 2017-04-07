@@ -1,0 +1,11 @@
+//****************
+//Mixins
+//****************
+
+//font mixin
+
+@mixin fonts ($font-size, $font-weight, $font-color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  color: $font-color;
+}

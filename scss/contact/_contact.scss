@@ -1,0 +1,51 @@
+/***** Contact section styles *****/
+
+.contact-title {
+  @include fonts (1.1em, 900, $tundora);
+  margin: 3em 0 1em 0;
+}
+
+.contact {
+  @extend %flex-column;
+  color: $gray;
+  background: $beige;
+  @extend %width-max;
+  margin-top: 3em;
+  margin-bottom: -.5em;
+  @media(min-width: $break-large) {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+}
+
+hr {
+  width: 90%;
+  @extend %margin-auto;
+  border: 2px solid rgb(186, 187, 188);
+}
+
+.info {
+  list-style-type: none;
+  @extend %margin-auto;
+  padding: 1.5em;
+  @extend %flex-column;
+  @media screen and (min-width: $break-medium) {
+    padding: 0 9em 0 9em;
+  }
+    li{
+      padding-bottom: 1em;
+  }
+}
+
+
+.numbers {
+  line-height: 2em;
+  list-style-type: none;
+  @extend %margin-auto;
+  padding: 0 0 3em 0;
+  display: block;
+}
+
+span {
+  @include fonts (1.1em, 700, $tundora);
+}
