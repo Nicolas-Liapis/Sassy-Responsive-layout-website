@@ -684,6 +684,8 @@ span {
     font-weight: 700;
     color: #4a4a4a;
     transition: all .5s ease-out; }
+    .footer a:hover {
+      color: #fff; }
 
 .footer-name {
   font-family: Courgette;
@@ -708,9 +710,6 @@ span {
     .footer-nav {
       margin: 0;
       margin-right: 1em; } }
-
-.footer a:hover {
-  color: #fff; }
 
 .hidden-back {
   font-size: 1em;

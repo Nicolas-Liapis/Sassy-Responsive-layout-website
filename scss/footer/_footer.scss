@@ -10,6 +10,9 @@
         text-decoration: none;
         @include fonts (.9em, 700, $tundora);
         transition: all .5s ease-out;
+        &:hover {
+          color: $white;
+        }
     }
   }
 
@@ -35,10 +38,6 @@
     margin: 0;
     margin-right: 1em;
   }
-}
-
-.footer a:hover {
-  color: $white;
 }
 
 .hidden-back {
